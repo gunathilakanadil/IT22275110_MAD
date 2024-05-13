@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background"
+
+    >
+
+    <TextView
+        android:id="@+id/editNoteHeading"
+        android:layout_width="142dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/editNoteHeading"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="33dp"
+        android:fontFamily="@font/bangers"
+        android:text="Update Task"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+
+    <Button
+        android:id="@+id/updateSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editNoteHeading"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="375dp"
+        android:layout_marginEnd="129dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="@color/black"
+        android:drawableStart="@drawable/baseline_done_24"
+        android:drawablePadding="6dp"
+        android:foregroundTint="@color/black"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text="Update"
+        android:textColorLink="#000000"
+        app:rippleColor="@color/black" />
+
+    <EditText
+        android:id="@+id/updateTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editNoteHeading"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/blue_border"
+        android:fontFamily="@font/bangers"
+        android:hint="Enter the title"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/updateContentEditText"
+        android:layout_width="389dp"
+        android:layout_height="179dp"
+        android:layout_below="@id/editNoteHeading"
+        android:layout_marginTop="140dp"
+        android:layout_weight="1"
+        android:background="@drawable/blue_border"
+        android:fontFamily="@font/bangers"
+        android:gravity="top"
+        android:hint="Enter the description"
+        android:padding="12dp"
+        android:textSize="18sp" />
+
+</RelativeLayout>
